@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevForge — Game Developer's Collective</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <script type="module" crossorigin src="/assets/main-BUjiWDsl.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/init-L-tSWv9X.js">
+  <link rel="stylesheet" crossorigin href="/assets/init-B3za_ykj.css">
+</head>
+<body>
+
+  <header class="fixed top-0 inset-x-0 z-50 bg-ocean/95 backdrop-blur-sm border-b border-cyan-900/20">
+    <nav class="max-w-[1100px] mx-auto px-5 flex items-center justify-between h-12">
+      <a href="index.html" class="font-display text-[10px] sm:text-[12px] text-accent tracking-wider">DevForge</a>
+      <div class="flex items-center gap-6">
+        <a href="index.html" class="nav-link active py-2.5">Home</a>
+        <a href="about.html" class="nav-link py-2.5">About</a>
+        <a href="merch.html" class="nav-link py-2.5">Merch</a>
+        <a href="community.html" class="nav-link py-2.5">Community</a>
+      </div>
+    </nav>
+  </header>
+
+  <div id="hero-3d-container" class="relative mt-12 h-[45vh] max-h-[360px] min-h-[220px] overflow-hidden">
+    <canvas id="hero-3d-canvas" class="absolute inset-0 w-full h-full"></canvas>
+  </div>
+
+  <main class="pt-12">
+    <div class="max-w-[1100px] mx-auto px-5 py-2 md:py-3">
+      <p class="section-title">// welcome to</p>
+      <h1 class="font-display text-[clamp(13px,3.5vw,20px)] leading-tight text-white mb-1">
+        Dev<span class="text-accent">Forge</span>
+      </h1>
+      <p class="text-gray-400 text-xs sm:text-sm max-w-[600px] leading-relaxed mb-2">
+        A collective for indie game developers, 3D artists, programmers, and storytellers.
+      </p>
+      <div class="flex flex-wrap gap-2">
+        <a href="community.html" class="btn-primary">Join the Forge</a>
+        <a href="about.html" class="btn-ghost">About Us</a>
+      </div>
+    </div>
+
+    <div class="max-w-[1100px] mx-auto px-5 py-4 md:py-2.5">
+      <p class="section-title">// featured</p>
+      <h2 class="text-2xl md:text-3xl font-bold text-white mb-8">Community Video</h2>
+      <div class="aspect-video rounded-xl overflow-hidden border border-cyan-900/20 bg-surface/50">
+        <video controls class="w-full h-full" poster="https://picsum.photos/seed/devforge-video/1280/720">
+          <source src="https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <p class="text-gray-500 text-sm mt-4">A 2–3 minute celebration of the indie game development community.</p>
+    </div>
+
+    <div class="max-w-[1100px] mx-auto px-5 py-4 md:py-2.5">
+      <p class="section-title">// explore</p>
+      <h2 class="text-2xl md:text-3xl font-bold text-white mb-8">Quick Links</h2>
+      <div class="grid sm:grid-cols-3 gap-4">
+        <a href="about.html" class="glass-card-hover p-6 block">
+          <p class="font-display text-[10px] text-accent mb-3">01.</p>
+          <h3 class="font-semibold text-white mb-2">About Us</h3>
+          <p class="text-sm text-gray-400 leading-relaxed">Our mission to advocate for indie creators and open-source game tools.</p>
+          <div class="flex flex-wrap gap-2 mt-4">
+            <span class="tag">mission</span>
+            <span class="tag-muted">team</span>
+          </div>
+        </a>
+        <a href="merch.html" class="glass-card-hover p-6 block">
+          <p class="font-display text-[10px] text-accent mb-3">02.</p>
+          <h3 class="font-semibold text-white mb-2">Merch Store</h3>
+          <p class="text-sm text-gray-400 leading-relaxed">DevForge swag, keycaps, mousepads, and asset packs.</p>
+          <div class="flex flex-wrap gap-2 mt-4">
+            <span class="tag">shop</span>
+            <span class="tag-muted">swag</span>
+          </div>
+        </a>
+        <a href="community.html" class="glass-card-hover p-6 block">
+          <p class="font-display text-[10px] text-accent mb-3">03.</p>
+          <h3 class="font-semibold text-white mb-2">Community</h3>
+          <p class="text-sm text-gray-400 leading-relaxed">Join 14,000+ developers and shape the future of game dev.</p>
+          <div class="flex flex-wrap gap-2 mt-4">
+            <span class="tag">join</span>
+            <span class="tag-muted">survey</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="max-w-[1100px] mx-auto px-5 py-4 md:py-2.5">
+      <p class="section-title">// games</p>
+      <h2 class="text-2xl md:text-3xl font-bold text-white mb-8">Indie Games That Inspired Us</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="glass-card-hover p-5">
+          <p class="font-display text-[10px] text-accent mb-2">2017</p>
+          <h3 class="font-semibold text-white text-sm">Hollow Knight</h3>
+          <p class="text-[11px] text-gray-500 mb-2">Team Cherry</p>
+          <p class="text-xs text-gray-400 leading-relaxed mb-3">A hand-drawn metroidvania built in Unity by a tiny Australian team. Became the gold standard for indie polish.</p>
+          <div class="flex flex-wrap gap-1.5"><span class="tag text-[10px] px-2 py-0.5">Unity</span><span class="tag-muted text-[10px] px-2 py-0.5">metroidvania</span></div>
+        </div>
+        <div class="glass-card-hover p-5">
+          <p class="font-display text-[10px] text-accent mb-2">2018</p>
+          <h3 class="font-semibold text-white text-sm">Celeste</h3>
+          <p class="text-[11px] text-gray-500 mb-2">Matt Makes Games</p>
+          <p class="text-xs text-gray-400 leading-relaxed mb-3">A precision platformer about climbing a mountain — and mental health. Built in a custom engine (XNA/MonoGame).</p>
+          <div class="flex flex-wrap gap-1.5"><span class="tag text-[10px] px-2 py-0.5">MonoGame</span><span class="tag-muted text-[10px] px-2 py-0.5">platformer</span></div>
+        </div>
+        <div class="glass-card-hover p-5">
+          <p class="font-display text-[10px] text-accent mb-2">2020</p>
+          <h3 class="font-semibold text-white text-sm">Hades</h3>
+          <p class="text-[11px] text-gray-500 mb-2">Supergiant Games</p>
+          <p class="text-xs text-gray-400 leading-relaxed mb-3">A rogue-lite dungeon crawler with deep narrative. Proved that early access + community feedback is a winning formula.</p>
+          <div class="flex flex-wrap gap-1.5"><span class="tag text-[10px] px-2 py-0.5">Custom</span><span class="tag-muted text-[10px] px-2 py-0.5">roguelite</span></div>
+        </div>
+        <div class="glass-card-hover p-5">
+          <p class="font-display text-[10px] text-accent mb-2">2016</p>
+          <h3 class="font-semibold text-white text-sm">Stardew Valley</h3>
+          <p class="text-[11px] text-gray-500 mb-2">ConcernedApe</p>
+          <p class="text-xs text-gray-400 leading-relaxed mb-3">Solo-developed farming RPG built in C# over 4 years. A testament to what one dedicated developer can achieve.</p>
+          <div class="flex flex-wrap gap-1.5"><span class="tag text-[10px] px-2 py-0.5">C#</span><span class="tag-muted text-[10px] px-2 py-0.5">simulation</span></div>
+        </div>
+        <div class="glass-card-hover p-5">
+          <p class="font-display text-[10px] text-accent mb-2">2015</p>
+          <h3 class="font-semibold text-white text-sm">Undertale</h3>
+          <p class="text-[11px] text-gray-500 mb-2">Toby Fox</p>
+          <p class="text-xs text-gray-400 leading-relaxed mb-3">Subversive RPG made mostly in GameMaker Studio 2. Its meta-narrative and soundtrack redefined indie storytelling.</p>
+          <div class="flex flex-wrap gap-1.5"><span class="tag text-[10px] px-2 py-0.5">GameMaker</span><span class="tag-muted text-[10px] px-2 py-0.5">RPG</span></div>
+        </div>
+        <div class="glass-card-hover p-5">
+          <p class="font-display text-[10px] text-accent mb-2">2018</p>
+          <h3 class="font-semibold text-white text-sm">Dead Cells</h3>
+          <p class="text-[11px] text-gray-500 mb-2">Motion Twin</p>
+          <p class="text-xs text-gray-400 leading-relaxed mb-3">Roguevania action-platformer that nailed the feel of combat. Built by a small French co-op using Heaps.io.</p>
+          <div class="flex flex-wrap gap-1.5"><span class="tag text-[10px] px-2 py-0.5">Heaps</span><span class="tag-muted text-[10px] px-2 py-0.5">action</span></div>
+        </div>
+        <div class="glass-card-hover p-5">
+          <p class="font-display text-[10px] text-accent mb-2">2019</p>
+          <h3 class="font-semibold text-white text-sm">Disco Elysium</h3>
+          <p class="text-[11px] text-gray-500 mb-2">ZA/UM</p>
+          <p class="text-xs text-gray-400 leading-relaxed mb-3">Revolutionary dialogue-driven RPG with no combat. Built in Unity by a collective of artists and writers.</p>
+          <div class="flex flex-wrap gap-1.5"><span class="tag text-[10px] px-2 py-0.5">Unity</span><span class="tag-muted text-[10px] px-2 py-0.5">narrative</span></div>
+        </div>
+        <div class="glass-card-hover p-5">
+          <p class="font-display text-[10px] text-accent mb-2">2018</p>
+          <h3 class="font-semibold text-white text-sm">Into the Breach</h3>
+          <p class="text-[11px] text-gray-500 mb-2">Subset Games</p>
+          <p class="text-xs text-gray-400 leading-relaxed mb-3">Turn-based tactics with a focus on player agency and minimal RNG. Built in a custom engine.</p>
+          <div class="flex flex-wrap gap-1.5"><span class="tag text-[10px] px-2 py-0.5">Custom</span><span class="tag-muted text-[10px] px-2 py-0.5">tactics</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-[1100px] mx-auto px-5 py-4 md:py-2.5">
+      <p class="section-title">// stats</p>
+      <div class="glass-card p-8 grid grid-cols-3 gap-8 text-center">
+        <div>
+          <p class="font-display text-lg sm:text-xl text-accent">1,500+</p>
+          <p class="text-gray-500 text-xs sm:text-sm mt-1">Active Developers</p>
+        </div>
+        <div>
+          <p class="font-display text-lg sm:text-xl text-accent">850+</p>
+          <p class="text-gray-500 text-xs sm:text-sm mt-1">Projects Shipped</p>
+        </div>
+        <div>
+          <p class="font-display text-lg sm:text-xl text-accent">320+</p>
+          <p class="text-gray-500 text-xs sm:text-sm mt-1">Community Members</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>

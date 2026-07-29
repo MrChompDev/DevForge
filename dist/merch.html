@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Merch — DevForge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <script type="module" crossorigin src="/assets/merch-DT8et20A.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/init-L-tSWv9X.js">
+  <link rel="stylesheet" crossorigin href="/assets/init-B3za_ykj.css">
+</head>
+<body>
+
+  <header class="fixed top-0 inset-x-0 z-50 bg-ocean/95 backdrop-blur-sm border-b border-cyan-900/20">
+    <nav class="max-w-[1100px] mx-auto px-5 flex items-center justify-between h-12">
+      <a href="index.html" class="font-display text-[10px] sm:text-[12px] text-accent tracking-wider">DevForge</a>
+      <div class="flex items-center gap-6">
+        <a href="index.html" class="nav-link py-2.5">Home</a>
+        <a href="about.html" class="nav-link py-2.5">About</a>
+        <a href="merch.html" class="nav-link active py-2.5">Merch</a>
+        <a href="community.html" class="nav-link py-2.5">Community</a>
+      </div>
+    </nav>
+  </header>
+
+  <div id="hero-3d-container" class="relative mt-12 h-[45vh] max-h-[360px] min-h-[220px] overflow-hidden">
+    <canvas id="hero-3d-canvas" class="absolute inset-0 w-full h-full"></canvas>
+  </div>
+
+  <main class="pt-12">
+    <div class="max-w-[1100px] mx-auto px-5 py-2 md:py-3">
+      <p class="section-title">// merch</p>
+      <h1 class="font-display text-[clamp(13px,3.5vw,20px)] leading-tight text-white mb-1">
+        Dev<span class="text-accent">Forge</span> Store
+      </h1>
+      <p class="text-gray-400 text-xs sm:text-sm max-w-[600px] leading-relaxed">Support the community and rep the forge with exclusive developer swag.</p>
+    </div>
+
+    <div class="max-w-[1100px] mx-auto px-5 py-4 md:py-2.5">
+
+      <p class="section-title">// apparel</p>
+      <h2 class="text-lg font-bold text-white mb-4">Clothing</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
+
+        <div class="glass-card-hover p-4 flex flex-col">
+          <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3HAoDP2sb45vOaZ0BftasSo2t1V/hf_20260729_101852_e347ce9e-b955-49a1-82ce-1452158766d2.png" alt="DevForge Hoodie" class="w-full h-32 object-cover rounded-lg mb-3 border border-cyan-900/20" loading="lazy" />
+          <h3 class="font-semibold text-white text-sm mb-1">DevForge Hoodie</h3>
+          <p class="text-xs text-gray-500 mb-2 flex-1 leading-relaxed">Premium hollow-knit hoodie with reflective logo.</p>
+          <div class="flex items-center justify-between mt-auto">
+            <span class="font-display text-xs text-accent">$59.99</span>
+            <button onclick="addToCart('hoodie')" class="btn-primary text-xs px-3 py-1.5">+ Cart</button>
+          </div>
+        </div>
+
+        <div class="glass-card-hover p-4 flex flex-col">
+          <div class="w-full h-32 bg-[#0F1923] rounded-lg mb-3 flex items-center justify-center border border-cyan-900/20 overflow-hidden">
+            <svg viewBox="0 0 400 260" class="w-full h-full">
+              <rect width="400" height="260" fill="#0F1923" rx="4"/>
+              <path d="M200 40 L150 52 L130 62 L115 58 L108 75 L130 82 L138 180 L262 180 L270 82 L292 75 L285 58 L270 62 L250 52Z" fill="none" stroke="#06B6D4" stroke-width="2.5" opacity="0.5"/>
+              <circle cx="200" cy="105" r="14" fill="none" stroke="#06B6D4" stroke-width="1.5" opacity="0.25"/>
+              <text x="200" y="230" text-anchor="middle" fill="#06B6D4" font-family="monospace" font-size="10" opacity="0.2">DEvFORGE</text>
+            </svg>
+          </div>
+          <h3 class="font-semibold text-white text-sm mb-1">DevForge T-Shirt</h3>
+          <p class="text-xs text-gray-500 mb-2 flex-1 leading-relaxed">Comfortable cotton tee with pixel logo print.</p>
+          <div class="flex items-center justify-between mt-auto">
+            <span class="font-display text-xs text-accent">$34.99</span>
+            <button onclick="addToCart('tshirt')" class="btn-primary text-xs px-3 py-1.5">+ Cart</button>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="section-title">// accessories</p>
+      <h2 class="text-lg font-bold text-white mb-4">Gear &amp; Swag</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
+
+        <div class="glass-card-hover p-4 flex flex-col">
+          <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3HAoDP2sb45vOaZ0BftasSo2t1V/hf_20260729_101852_ac516a4d-e9d6-4b4d-a164-60df677bb4fd.png" alt="Mechanical Keycaps" class="w-full h-32 object-cover rounded-lg mb-3 border border-cyan-900/20" loading="lazy" />
+          <h3 class="font-semibold text-white text-sm mb-1">Mechanical Keycaps</h3>
+          <p class="text-xs text-gray-500 mb-2 flex-1 leading-relaxed">Custom keycap set with code-themed legends.</p>
+          <div class="flex items-center justify-between mt-auto">
+            <span class="font-display text-xs text-accent">$39.99</span>
+            <button onclick="addToCart('keycaps')" class="btn-primary text-xs px-3 py-1.5">+ Cart</button>
+          </div>
+        </div>
+
+        <div class="glass-card-hover p-4 flex flex-col">
+          <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3HAoDP2sb45vOaZ0BftasSo2t1V/hf_20260729_101852_762c522b-ea98-47e5-82e2-6255ce7c5971.png" alt="RGB Mousepad" class="w-full h-32 object-cover rounded-lg mb-3 border border-cyan-900/20" loading="lazy" />
+          <h3 class="font-semibold text-white text-sm mb-1">RGB Mousepad</h3>
+          <p class="text-xs text-gray-500 mb-2 flex-1 leading-relaxed">Large RGB mousepad with DevForge branding.</p>
+          <div class="flex items-center justify-between mt-auto">
+            <span class="font-display text-xs text-accent">$29.99</span>
+            <button onclick="addToCart('mousepad')" class="btn-primary text-xs px-3 py-1.5">+ Cart</button>
+          </div>
+        </div>
+
+        <div class="glass-card-hover p-4 flex flex-col">
+          <div class="w-full h-32 bg-[#0F1923] rounded-lg mb-3 flex items-center justify-center border border-cyan-900/20 overflow-hidden">
+            <svg viewBox="0 0 400 260" class="w-full h-full">
+              <rect width="400" height="260" fill="#0F1923" rx="4"/>
+              <path d="M130 120 Q130 70 170 70 L230 70 Q270 70 270 120 L270 180 L130 180Z" fill="none" stroke="#06B6D4" stroke-width="2.5" opacity="0.5"/>
+              <ellipse cx="200" cy="180" rx="70" ry="12" fill="none" stroke="#06B6D4" stroke-width="2" opacity="0.35"/>
+              <text x="200" y="230" text-anchor="middle" fill="#06B6D4" font-family="monospace" font-size="10" opacity="0.2">FORGE</text>
+            </svg>
+          </div>
+          <h3 class="font-semibold text-white text-sm mb-1">DevForge Mug</h3>
+          <p class="text-xs text-gray-500 mb-2 flex-1 leading-relaxed">Ceramic mug with heat-reactive forge logo.</p>
+          <div class="flex items-center justify-between mt-auto">
+            <span class="font-display text-xs text-accent">$19.99</span>
+            <button onclick="addToCart('mug')" class="btn-primary text-xs px-3 py-1.5">+ Cart</button>
+          </div>
+        </div>
+
+        <div class="glass-card-hover p-4 flex flex-col">
+          <div class="w-full h-32 bg-[#0F1923] rounded-lg mb-3 flex items-center justify-center border border-cyan-900/20 overflow-hidden">
+            <svg viewBox="0 0 400 260" class="w-full h-full">
+              <rect width="400" height="260" fill="#0F1923" rx="4"/>
+              <rect x="100" y="70" width="50" height="50" rx="4" fill="none" stroke="#06B6D4" stroke-width="2" opacity="0.5"/>
+              <rect x="170" y="70" width="50" height="50" rx="4" fill="none" stroke="#22D3EE" stroke-width="2" opacity="0.4"/>
+              <rect x="240" y="70" width="50" height="50" rx="4" fill="none" stroke="#06B6D4" stroke-width="2" opacity="0.5"/>
+              <rect x="135" y="135" width="50" height="50" rx="4" fill="none" stroke="#22D3EE" stroke-width="2" opacity="0.4"/>
+              <rect x="205" y="135" width="50" height="50" rx="4" fill="none" stroke="#06B6D4" stroke-width="2" opacity="0.5"/>
+              <text x="200" y="230" text-anchor="middle" fill="#06B6D4" font-family="monospace" font-size="10" opacity="0.2">STICKERS</text>
+            </svg>
+          </div>
+          <h3 class="font-semibold text-white text-sm mb-1">Sticker Pack</h3>
+          <p class="text-xs text-gray-500 mb-2 flex-1 leading-relaxed">10 vinyl stickers featuring DevForge designs.</p>
+          <div class="flex items-center justify-between mt-auto">
+            <span class="font-display text-xs text-accent">$14.99</span>
+            <button onclick="addToCart('stickers')" class="btn-primary text-xs px-3 py-1.5">+ Cart</button>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="section-title">// digital</p>
+      <h2 class="text-lg font-bold text-white mb-4">Downloads &amp; Prints</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+
+        <div class="glass-card-hover p-4 flex flex-col">
+          <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3HAoDP2sb45vOaZ0BftasSo2t1V/hf_20260729_102112_773e6986-da0d-4abb-9173-709587c5f74d.png" alt="Dev Asset Pack" class="w-full h-32 object-cover rounded-lg mb-3 border border-cyan-900/20" loading="lazy" />
+          <h3 class="font-semibold text-white text-sm mb-1">Dev Asset Pack</h3>
+          <p class="text-xs text-gray-500 mb-2 flex-1 leading-relaxed">Starter pack with sprites, sounds, and UI kits.</p>
+          <div class="flex items-center justify-between mt-auto">
+            <span class="font-display text-xs text-accent">$49.99</span>
+            <button onclick="addToCart('devpack')" class="btn-primary text-xs px-3 py-1.5">+ Cart</button>
+          </div>
+        </div>
+
+        <div class="glass-card-hover p-4 flex flex-col">
+          <div class="w-full h-32 bg-[#0F1923] rounded-lg mb-3 flex items-center justify-center border border-cyan-900/20 overflow-hidden">
+            <svg viewBox="0 0 400 260" class="w-full h-full">
+              <rect width="400" height="260" fill="#0F1923" rx="4"/>
+              <rect x="100" y="55" width="200" height="140" rx="6" fill="none" stroke="#06B6D4" stroke-width="2" opacity="0.5"/>
+              <rect x="105" y="60" width="190" height="130" rx="4" fill="none" stroke="#06B6D4" stroke-width="1" opacity="0.15"/>
+              <line x1="180" y1="55" x2="180" y2="195" stroke="#06B6D4" stroke-width="0.5" opacity="0.1"/>
+              <line x1="100" y1="125" x2="300" y2="125" stroke="#06B6D4" stroke-width="0.5" opacity="0.1"/>
+              <circle cx="200" cy="120" r="24" fill="none" stroke="#22D3EE" stroke-width="1.5" opacity="0.35"/>
+              <polygon points="212,108 212,132 192,120" fill="#06B6D4" opacity="0.25"/>
+              <text x="200" y="235" text-anchor="middle" fill="#06B6D4" font-family="monospace" font-size="10" opacity="0.2">POSTER</text>
+            </svg>
+          </div>
+          <h3 class="font-semibold text-white text-sm mb-1">DevForge Poster</h3>
+          <p class="text-xs text-gray-500 mb-2 flex-1 leading-relaxed">Limited edition A2 poster by indie artists.</p>
+          <div class="flex items-center justify-between mt-auto">
+            <span class="font-display text-xs text-accent">$24.99</span>
+            <button onclick="addToCart('poster')" class="btn-primary text-xs px-3 py-1.5">+ Cart</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <div id="cart-modal" class="hidden fixed inset-0 z-[100] bg-black/70 backdrop-blur-sm flex items-start justify-center pt-20">
+    <div class="w-full max-w-md mx-4 glass-card p-6 max-h-[80vh] overflow-y-auto">
+      <div class="flex items-center justify-between mb-5">
+        <h2 class="font-display text-xs text-accent">// cart</h2>
+        <button onclick="closeCart()" class="text-gray-500 hover:text-white text-lg">&times;</button>
+      </div>
+      <div id="cart-content" class="text-sm text-gray-400">
+        <div class="text-center py-8">Your cart is empty</div>
+      </div>
+      <div class="mt-5 pt-5 border-t border-cyan-900/20">
+        <div class="flex justify-between items-center mb-4">
+          <span class="text-sm text-gray-400">Total:</span>
+          <span id="cart-total" class="font-display text-sm text-accent">$0.00</span>
+        </div>
+        <button onclick="closeCart()" class="w-full btn-primary justify-center">Checkout</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
