@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How It Was Made — DevForge · The Subnautica Dive</title>
+  <meta name="description" content="Unknown Worlds built Subnautica in Unity without a massive budget: volumetric lighting, creature AI, survival balancing — and no guns. Plus Indie vs AAA." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header class="fixed top-0 inset-x-0 z-50 bg-abyss/90 backdrop-blur-sm border-b border-cyan-400/10">
+    <nav class="max-w-[1100px] mx-auto px-5 flex items-center justify-between h-12">
+      <a href="index.html" class="font-display font-semibold text-sm text-glow tracking-[0.2em] uppercase">Dev<span class="text-glowlite">Forge</span></a>
+      <div class="flex items-center gap-4 sm:gap-6">
+        <a href="index.html" class="nav-link py-2.5">Home</a>
+        <a href="about.html" class="nav-link active py-2.5">How It Was Made</a>
+        <a href="creators.html" class="nav-link py-2.5">Creators</a>
+        <a href="community.html" class="nav-link py-2.5">Community</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="pt-12">
+
+    <!-- ACT 1 HERO -->
+    <section id="hero" class="relative mt-0 h-[46vh] max-h-[380px] min-h-[300px] overflow-hidden bg-abyss">
+      <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/ss_970a13f246e33e0df26d93baf9f8e975732adb4b.1920x1080.jpg?t=1777456112" alt="" aria-hidden="true" class="absolute inset-0 w-full h-full object-cover opacity-30" />
+      <div class="absolute inset-0 bg-gradient-to-b from-[#0a3d52]/70 via-[#052740]/80 to-abyss"></div>
+      <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-5 z-10">
+        <p class="act-chip mb-4">Act 01 &middot; 0:15&ndash;0:55 &middot; Kelp Forest</p>
+        <h1 class="font-display font-bold text-foam text-[clamp(28px,5.5vw,48px)] leading-tight tracking-wide uppercase">
+          How It Was Made
+        </h1>
+        <p class="font-display text-glowlite tracking-[0.3em] uppercase text-xs sm:text-sm mt-2">&amp; why it's different</p>
+      </div>
+    </section>
+
+    <!-- THE STUDIO -->
+    <section data-reveal class="max-w-[1100px] mx-auto px-5 pt-16 pb-8">
+      <p class="section-title"> the studio</p>
+      <div class="glass-card p-8 md:p-10 grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <h2 class="text-xl md:text-2xl font-bold text-white mb-4">Not a Massive AAA Studio.<br /><span class="text-glow">A small indie team.</span></h2>
+          <p class="text-gray-400 leading-relaxed mb-4">
+            Subnautica was created by Unknown Worlds—a small indie team working in the Unity engine.
+            No army of contractors. No bottomless budget. Just a group of developers solving one hard
+            problem after another.
+          </p>
+          <p class="text-gray-400 leading-relaxed">
+            They tackled problems most studios would punt on: rendering light itself underwater,
+            simulating living ecosystems, and balancing a survival game where the environment is the enemy.
+          </p>
+          <div class="flex flex-wrap gap-2 mt-6">
+            <span class="tag">Unity Engine</span>
+            <span class="tag-muted">Small Team</span>
+            <span class="tag-muted">Indie Budget</span>
+          </div>
+        </div>
+        <div class="glass-card p-6 space-y-4 bg-abyss/60">
+          <p class="font-display text-[10px] tracking-[0.25em] uppercase text-mist">Solved without massive budgets</p>
+          <div class="space-y-3">
+            <div class="flex items-start gap-3">
+              <span class="font-display text-xs text-glow mt-0.5 shrink-0">01</span>
+              <p class="text-sm text-gray-300 leading-relaxed"><span class="text-white font-semibold">Underwater volumetric lighting</span> — god rays, murk, and bioluminescence that make the ocean feel alive.</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="font-display text-xs text-glow mt-0.5 shrink-0">02</span>
+              <p class="text-sm text-gray-300 leading-relaxed"><span class="text-white font-semibold">Complex creature AI</span> — ecosystems that roam, react, and stalk the player through the dark.</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="font-display text-xs text-glow mt-0.5 shrink-0">03</span>
+              <p class="text-sm text-gray-300 leading-relaxed"><span class="text-white font-semibold">Survival balancing</span> — oxygen, depth, and hunger tuned so tension always climbs with you.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- WHY IT'S DIFFERENT -->
+    <section data-reveal class="max-w-[1100px] mx-auto px-5 py-8">
+      <p class="section-title">why it's different</p>
+      <h2 class="text-2xl md:text-3xl font-bold text-white mb-3">It Breaks Almost Every Rule of the Survival Genre</h2>
+      <p class="text-gray-400 text-sm max-w-[600px] leading-relaxed mb-8">
+        Survival isn't just about avoiding danger—it's about engineering your way deeper. Every vehicle you build is a key to the next layer of the unknown.
+      </p>
+      <div class="grid md:grid-cols-3 gap-4 mb-4">
+        <div class="glass-card-hover p-6 text-center">
+          <p class="font-display font-bold text-3xl text-coral">NO GUNS</p>
+          <p class="text-sm text-gray-400 leading-relaxed mt-3">There are no weapons. You cannot shoot your way out of this ocean.</p>
+        </div>
+        <div class="glass-card-hover p-6 text-center">
+          <p class="font-display font-bold text-3xl text-coral">NO COMBAT</p>
+          <p class="text-sm text-gray-400 leading-relaxed mt-3">There is no combat system. Fear here comes from what you can't fight.</p>
+        </div>
+        <div class="glass-card-hover p-6 text-center">
+          <p class="font-display font-bold text-3xl text-glow">THE OCEAN IS<br />THE ANTAGONIST</p>
+          <p class="text-sm text-gray-400 leading-relaxed mt-3">Not a villain with a face—the entire sea wants you gone.</p>
+        </div>
+      </div>
+
+      <!-- VEHICLE PROGRESSION -->
+      <div class="grid md:grid-cols-3 gap-4">
+        <div class="glass-card p-6">
+          <p class="act-chip mb-3">Stage 01</p>
+          <h3 class="font-semibold text-white mb-2">Fins &amp; Mask</h3>
+          <p class="text-sm text-gray-400 leading-relaxed">Survival begins at the surface. Every meter down costs oxygen—and teaches you respect.</p>
+        </div>
+        <div class="glass-card p-6">
+          <p class="act-chip mb-3">Stage 02</p>
+          <h3 class="font-semibold text-white mb-2">Seamoth</h3>
+          <p class="text-sm text-gray-400 leading-relaxed">Crafting a Seamoth isn't about gaining firepower to dominate—it's a one-person sub that turns distance into possibility.</p>
+        </div>
+        <div class="glass-card p-6">
+          <p class="act-chip mb-3">Stage 03</p>
+          <h3 class="font-semibold text-white mb-2">Cyclops</h3>
+          <p class="text-sm text-gray-400 leading-relaxed">A massive submarine built for one purpose: pushing further into the unknown than your body ever could.</p>
+        </div>
+      </div>
+      <p class="text-center text-mist text-sm mt-6">It's a game built on <span class="text-glow">immersion</span> and <span class="text-glow">discovery</span>.</p>
+    </section>
+
+    <!-- SCREENSHOT STRIP -->
+    <section data-reveal class="max-w-[1100px] mx-auto px-5 py-6">
+      <div class="relative rounded-xl overflow-hidden border border-cyan-400/10 h-48 md:h-64">
+        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/ss_0ace7f8b4350b8fbdd16345a76bc30545256e918.1920x1080.jpg?t=1777456112" alt="Subnautica in-game capture" class="w-full h-full object-cover" loading="lazy" />
+        <div class="absolute inset-0 bg-gradient-to-t from-abyss via-abyss/50 to-transparent"></div>
+        <p class="absolute bottom-4 left-6 font-display text-xs text-gray-400 tracking-wider">In-game capture &middot; Subnautica &copy; Unknown Worlds Entertainment</p>
+      </div>
+    </section>
+
+    <!-- ACT 2 · INDIE VS AAA -->
+    <section id="indie-vs-aaa" data-reveal class="max-w-[1100px] mx-auto px-5 pt-12 pb-8 scroll-mt-24">
+      <p class="section-title"> act 02 · 0:55–1:25</p>
+      <h2 class="text-2xl md:text-3xl font-bold text-white mb-3">Indie vs AAA</h2>
+      <p class="text-gray-400 text-sm max-w-[600px] leading-relaxed mb-8">
+        A rhythmic montage cuts between a Cyclops threading the dark depths and a AAA colossus like Horizon Zero Dawn. Two philosophies of scale:
+      </p>
+      <div class="grid md:grid-cols-2 gap-4">
+
+        <div class="glass-card p-7 border-glow/25 relative overflow-hidden">
+          <p class="act-chip mb-4">Subnautica Way &middot; Indie</p>
+          <ul class="space-y-3 text-sm text-gray-300 leading-relaxed">
+            <li class="flex gap-3"><span class="text-glow">&#9656;</span> Small co-op team, lean financial backing</li>
+            <li class="flex gap-3"><span class="text-glow">&#9656;</span> Faster iteration and creative problem-solving</li>
+            <li class="flex gap-3"><span class="text-glow">&#9656;</span> Smart, handcrafted design over raw fidelity</li>
+            <li class="flex gap-3"><span class="text-glow">&#9656;</span> Atmosphere engineered from constraints</li>
+          </ul>
+          <p class="text-xs text-gray-500 mt-5 italic">"Where others rely on sheer scale, Subnautica achieves masterpiece status through incredibly smart, handcrafted design."</p>
+        </div>
+
+        <div class="glass-card p-7 relative overflow-hidden">
+          <p class="tag-muted inline-flex items-center gap-2 font-display text-[10px] tracking-[0.2em] uppercase rounded px-2 py-1 mb-4">AAA Colossus</p>
+          <ul class="space-y-3 text-sm text-gray-400 leading-relaxed">
+            <li class="flex gap-3"><span class="text-gray-600">&#9656;</span> Huge teams and massive financial backing</li>
+            <li class="flex gap-3"><span class="text-gray-600">&#9656;</span> Full motion capture pipelines</li>
+            <li class="flex gap-3"><span class="text-gray-600">&#9656;</span> Ultra-high fidelity as the headline feature</li>
+            <li class="flex gap-3"><span class="text-gray-600">&#9656;</span> Sheer scale as the core promise</li>
+          </ul>
+          <p class="text-xs text-gray-600 mt-5 italic">Impressive—but scale alone has never made an ocean feel alive.</p>
+        </div>
+
+      </div>
+      <div class="glass-card p-8 text-center mt-6 border-kelp/20">
+        <p class="text-lg md:text-xl text-foam leading-relaxed">
+          Subnautica proves indie games can deliver <span class="text-glow font-semibold">AAA-level atmosphere</span>—without the resources.
+        </p>
+      </div>
+    </section>
+
+
+    <!-- NEXT -->
+    <section data-reveal class="max-w-[1100px] mx-auto px-5 py-8">
+      <div class="glass-card-hover p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+        <div>
+          <p class="section-title"> next leg</p>
+          <h2 class="text-xl font-bold text-white">The lights in the deep: five creators who teach how games like this are made.</h2>
+        </div>
+        <a href="creators.html" class="btn-primary shrink-0">Continue the Descent &#8595;</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="border-t border-cyan-400/10 mt-16">
+    <div class="max-w-[1100px] mx-auto px-5 py-10 grid sm:grid-cols-2 gap-8">
+      <div>
+        <p class="font-display font-semibold text-sm text-glow tracking-[0.2em] uppercase">Dev<span class="text-glowlite">Forge</span></p>
+        <p class="text-xs text-gray-500 mt-3 max-w-sm leading-relaxed">
+          A game development community inspired by Subnautica — celebrating the tools, techniques, and creators that prove indie teams can build worlds worth diving into.
+          Game footage, trailers, and screenshots &copy; Unknown Worlds Entertainment. Not affiliated with Krafton.
+        </p>
+      </div>
+      <div class="text-xs">
+        <p class="font-display text-[10px] tracking-[0.25em] uppercase text-mist mb-3">Chart the Dive</p>
+        <div class="grid grid-cols-2 gap-2 text-gray-500">
+          <a href="index.html" class="hover:text-glow transition-colors">Home &middot; The Descent</a>
+          <a href="about.html" class="hover:text-glow transition-colors">How It Was Made</a>
+          <a href="about.html#indie-vs-aaa" class="hover:text-glow transition-colors">Indie vs AAA</a>
+          <a href="creators.html" class="hover:text-glow transition-colors">Creator Showcase</a>
+          <a href="community.html" class="hover:text-glow transition-colors">Mods &amp; Community</a>
+          <a href="#hero" class="hover:text-glow transition-colors">Back to the Surface</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/pages/about.ts"></script>
+</body>
+</html>

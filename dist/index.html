@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevForge — Dive Into Game Development: The Subnautica Community</title>
+  <meta name="description" content="Every game has a community. Some go deeper — literally. A dive into how Subnautica was made, what sets it apart, and the creators and fans shaping its world." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet" />
+  <script type="module" crossorigin src="/assets/main-BhSDa_cS.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/ambient-bubbles-CNNAS53L.js">
+  <link rel="stylesheet" crossorigin href="/assets/ambient-bubbles-CDtO9yzf.css">
+</head>
+<body>
+
+  <header class="fixed top-0 inset-x-0 z-50 bg-abyss/90 backdrop-blur-sm border-b border-cyan-400/10">
+    <nav class="max-w-[1100px] mx-auto px-5 flex items-center justify-between h-12">
+      <a href="index.html" class="font-display font-semibold text-sm text-glow tracking-[0.2em] uppercase">Dev<span class="text-glowlite">Forge</span></a>
+      <div class="flex items-center gap-4 sm:gap-6">
+        <a href="index.html" class="nav-link active py-2.5">Home</a>
+        <a href="about.html" class="nav-link py-2.5">How It Was Made</a>
+        <a href="creators.html" class="nav-link py-2.5">Creators</a>
+        <a href="community.html" class="nav-link py-2.5">Community</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="pt-12">
+
+    <!-- ACT 0 · THE DESCENT -->
+    <section id="hero" class="relative mt-0 h-[78vh] min-h-[480px] overflow-hidden bg-abyss">
+      <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/ss_e182b6b20bb797500f9f63c561586d920d44e37c.1920x1080.jpg?t=1777456112" alt="" aria-hidden="true" class="absolute inset-0 w-full h-full object-cover opacity-35" />
+      <div class="absolute inset-0 bg-gradient-to-b from-[#155d84]/70 via-[#062c4e]/80 to-abyss"></div>
+      <div class="absolute inset-x-0 top-0 h-44 pointer-events-none" style="background: radial-gradient(60% 100% at 50% 0%, rgba(255,179,107,0.28), rgba(255,179,107,0) 70%);"></div>
+      <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-5 z-10">
+        <p class="act-chip mb-6">Transmission 001 &middot; 0:00</p>
+        <h1 class="font-display font-bold text-foam text-[clamp(34px,7vw,68px)] leading-none tracking-wide uppercase">
+          Dive Into<br class="sm:hidden" /> Game Development
+        </h1>
+        <p class="font-display font-medium text-glowlite tracking-[0.35em] uppercase text-xs sm:text-base mt-4">A Game Development Deep Dive</p>
+        <p class="text-mist text-sm sm:text-base max-w-xl leading-relaxed mt-6">
+          How does a small indie team build one of the most immersive survival games ever made?
+          We're breaking down the tools, the design decisions, and the community behind Subnautica.
+        </p>
+        <div class="flex flex-wrap justify-center gap-3 mt-8">
+          <a href="#dive-plan" class="btn-primary">Begin the Descent</a>
+          <a href="creators.html" class="btn-ghost">Meet the Creators</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEPTH LADDER -->
+    <section data-reveal class="border-y border-cyan-400/10 bg-trench/60">
+      <div class="max-w-[1100px] mx-auto px-5 py-4 overflow-x-auto">
+        <div class="flex items-center gap-0 min-w-max font-display text-[10px] tracking-[0.18em] uppercase whitespace-nowrap">
+          <span class="text-coral">Surface &middot; Sunrise</span>
+          <span class="mx-4 h-px w-10 bg-cyan-400/20"></span>
+          <span class="text-glow">Safe Shallows</span>
+          <span class="mx-4 h-px w-10 bg-cyan-400/20"></span>
+          <span class="text-kelp">Kelp Forest</span>
+          <span class="mx-4 h-px w-10 bg-cyan-400/20"></span>
+          <span class="text-glowlite">Grand Reef</span>
+          <span class="mx-4 h-px w-10 bg-cyan-400/20"></span>
+          <span class="text-mist">Lost River &middot; 900m</span>
+          <span class="mx-4 h-px w-10 bg-cyan-400/20"></span>
+          <span class="text-gray-500">The Void &middot; &#8734;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIVE PLAN -->
+    <section id="dive-plan" data-reveal class="max-w-[1100px] mx-auto px-5 pt-16 pb-8">
+      <p class="section-title"> dive plan</p>
+      <h2 class="text-2xl md:text-3xl font-bold text-white mb-3">Today's Route Down</h2>
+      <p class="text-gray-400 text-sm max-w-[600px] leading-relaxed mb-8">
+        One unbroken dive, five legs. Follow the same path the video takes—from the first breath at sunrise to the swim back toward the light.
+      </p>
+      <div class="space-y-4">
+
+        <a href="#hero" class="glass-card-hover p-5 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6 block">
+          <span class="font-display text-xs text-coral shrink-0 w-24">0:00&ndash;0:15</span>
+          <div class="flex-1">
+            <h3 class="font-display font-semibold text-white tracking-wide uppercase">Act 00 &middot; The Descent</h3>
+            <p class="text-sm text-gray-400 leading-relaxed mt-1">Freecam above the ocean surface at sunrise—one smooth push forward, then under. Ambient drone gives way to heavy underwater bass.</p>
+          </div>
+          <span class="tag-muted shrink-0 self-start sm:self-center">you are here</span>
+        </a>
+
+        <a href="about.html" class="glass-card-hover p-5 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6 block">
+          <span class="font-display text-xs text-glow shrink-0 w-24">0:15&ndash;0:55</span>
+          <div class="flex-1">
+            <h3 class="font-display font-semibold text-white tracking-wide uppercase">Act 01 &middot; How It Was Made</h3>
+            <p class="text-sm text-gray-400 leading-relaxed mt-1">A glide through the Kelp Forest. Unknown Worlds, Unity, volumetric light—and why no guns is the whole point.</p>
+          </div>
+          <span class="tag shrink-0 self-start sm:self-center">dive deeper &#8594;</span>
+        </a>
+
+        <a href="about.html#indie-vs-aaa" class="glass-card-hover p-5 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6 block">
+          <span class="font-display text-xs text-glow shrink-0 w-24">0:55&ndash;1:25</span>
+          <div class="flex-1">
+            <h3 class="font-display font-semibold text-white tracking-wide uppercase">Act 02 &middot; Indie vs AAA</h3>
+            <p class="text-sm text-gray-400 leading-relaxed mt-1">The Cyclops in the dark depths vs the might of AAA. Scale versus smart, handcrafted design.</p>
+          </div>
+          <span class="tag shrink-0 self-start sm:self-center">dive deeper &#8594;</span>
+        </a>
+
+        <a href="creators.html" class="glass-card-hover p-5 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6 block">
+          <span class="font-display text-xs text-kelp shrink-0 w-24">1:25&ndash;2:00</span>
+          <div class="flex-1">
+            <h3 class="font-display font-semibold text-white tracking-wide uppercase">Act 03 &middot; Creator Showcase</h3>
+            <p class="text-sm text-gray-400 leading-relaxed mt-1">Brackeys, Blackthornprod, Jonas Tyroller, Code Monkey, ThinMatrix—the lights that make game dev accessible to everyone.</p>
+          </div>
+          <span class="tag shrink-0 self-start sm:self-center">dive deeper &#8594;</span>
+        </a>
+
+        <a href="community.html" class="glass-card-hover p-5 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6 block">
+          <span class="font-display text-xs text-glowlite shrink-0 w-24">2:00&ndash;2:30</span>
+          <div class="flex-1">
+            <h3 class="font-display font-semibold text-white tracking-wide uppercase">Act 04 &middot; Mods, Community &amp; Ascent</h3>
+            <p class="text-sm text-gray-400 leading-relaxed mt-1">A customized seabase, a docked Seamoth—and the swim upward as the screen fades to white. Dive in.</p>
+          </div>
+          <span class="tag shrink-0 self-start sm:self-center">dive deeper &#8594;</span>
+        </a>
+
+      </div>
+    </section>
+
+
+    <!-- OPENING TRANSMISSION -->
+    <section data-reveal class="max-w-[1100px] mx-auto px-5 py-8">
+      <div class="glass-card p-8 md:p-10 relative overflow-hidden">
+        <div class="absolute -top-10 -right-6 font-display text-[120px] text-glow/10 select-none">&rdquo;</div>
+        <p class="section-title"> opening transmission</p>
+        <blockquote class="text-lg md:text-xl text-foam leading-relaxed max-w-3xl relative">
+          Every game has a community. But some communities go deeper—literally. Welcome to
+          <span class="text-glow">Subnautica</span>—a world built through creativity, technology, and pure passion.
+          Today, I'm diving into how this masterpiece was made, what sets it apart, and why joining this community
+          means joining a world shaped by developers and fans together.
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- WATCH THE DIVE -->
+    <section data-reveal class="max-w-[1100px] mx-auto px-5 py-8">
+      <p class="section-title"> featured</p>
+      <h2 class="text-2xl md:text-3xl font-bold text-white mb-8">Watch the Full Dive</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div>
+          <div class="aspect-video rounded-xl overflow-hidden border border-cyan-400/15 bg-trench/50 shadow-[0_0_60px_rgba(49,216,255,0.06)]">
+            <video controls class="w-full h-full" poster="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/256706872/movie.293x165.jpg">
+              <source src="https://video.akamai.steamstatic.com/store_trailers/256706872/movie_max.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <p class="text-gray-500 text-xs mt-3">Cinematic Trailer &middot; &copy; Unknown Worlds Entertainment</p>
+        </div>
+        <div>
+          <div class="aspect-video rounded-xl overflow-hidden border border-cyan-400/15 bg-trench/50 shadow-[0_0_60px_rgba(49,216,255,0.06)]">
+            <video controls class="w-full h-full" poster="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/256706800/movie.293x165.jpg">
+              <source src="https://video.akamai.steamstatic.com/store_trailers/256706800/movie_max.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <p class="text-gray-500 text-xs mt-3">Gameplay Trailer &middot; &copy; Unknown Worlds Entertainment</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FIELD CAPTURES -->
+    <section data-reveal class="max-w-[1100px] mx-auto px-5 py-8">
+      <p class="section-title"> field captures</p>
+      <h2 class="text-2xl md:text-3xl font-bold text-white mb-8">From the Surface to the Deep</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+        <a href="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/ss_e182b6b20bb797500f9f63c561586d920d44e37c.1920x1080.jpg?t=1777456112" target="_blank" rel="noopener noreferrer" class="group relative overflow-hidden rounded-lg border border-cyan-400/10 aspect-video">
+          <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/ss_e182b6b20bb797500f9f63c561586d920d44e37c.600x338.jpg?t=1777456112" alt="Subnautica in-game capture" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" />
+          <span class="absolute inset-0 bg-abyss/0 group-hover:bg-abyss/40 transition-colors flex items-center justify-center opacity-0 group-hover:opacity-100"><span class="font-display text-xs text-glow tracking-wider">View</span></span>
+        </a>
+        <a href="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/ss_970a13f246e33e0df26d93baf9f8e975732adb4b.1920x1080.jpg?t=1777456112" target="_blank" rel="noopener noreferrer" class="group relative overflow-hidden rounded-lg border border-cyan-400/10 aspect-video">
+          <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/ss_970a13f246e33e0df26d93baf9f8e975732adb4b.600x338.jpg?t=1777456112" alt="Subnautica in-game capture" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" />
+          <span class="absolute inset-0 bg-abyss/0 group-hover:bg-abyss/40 transition-colors flex items-center justify-center opacity-0 group-hover:opacity-100"><span class="font-display text-xs text-glow tracking-wider">View</span></span>
+        </a>
+        <a href="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/ss_5f2f2ea498cdc632cbffd6cf37c1a09670eb3272.1920x1080.jpg?t=1777456112" target="_blank" rel="noopener noreferrer" class="group relative overflow-hidden rounded-lg border border-cyan-400/10 aspect-video">
+          <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/ss_5f2f2ea498cdc632cbffd6cf37c1a09670eb3272.600x338.jpg?t=1777456112" alt="Subnautica in-game capture" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" />
+          <span class="absolute inset-0 bg-abyss/0 group-hover:bg-abyss/40 transition-colors flex items-center justify-center opacity-0 group-hover:opacity-100"><span class="font-display text-xs text-glow tracking-wider">View</span></span>
+        </a>
+        <a href="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/ss_cebc378d2f7bc78978c21db4e3c5e12ccd067349.1920x1080.jpg?t=1777456112" target="_blank" rel="noopener noreferrer" class="group relative overflow-hidden rounded-lg border border-cyan-400/10 aspect-video">
+          <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/ss_cebc378d2f7bc78978c21db4e3c5e12ccd067349.600x338.jpg?t=1777456112" alt="Subnautica in-game capture" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" />
+          <span class="absolute inset-0 bg-abyss/0 group-hover:bg-abyss/40 transition-colors flex items-center justify-center opacity-0 group-hover:opacity-100"><span class="font-display text-xs text-glow tracking-wider">View</span></span>
+        </a>
+        <a href="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/ss_f0eeabe108c2bc2b3e370b9828fb280035b50db2.1920x1080.jpg?t=1777456112" target="_blank" rel="noopener noreferrer" class="group relative overflow-hidden rounded-lg border border-cyan-400/10 aspect-video">
+          <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/ss_f0eeabe108c2bc2b3e370b9828fb280035b50db2.600x338.jpg?t=1777456112" alt="Subnautica in-game capture" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" />
+          <span class="absolute inset-0 bg-abyss/0 group-hover:bg-abyss/40 transition-colors flex items-center justify-center opacity-0 group-hover:opacity-100"><span class="font-display text-xs text-glow tracking-wider">View</span></span>
+        </a>
+        <a href="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/ss_b28404f3d108cc15aebbb2c3d7cb17e587225662.1920x1080.jpg?t=1777456112" target="_blank" rel="noopener noreferrer" class="group relative overflow-hidden rounded-lg border border-cyan-400/10 aspect-video">
+          <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/ss_b28404f3d108cc15aebbb2c3d7cb17e587225662.600x338.jpg?t=1777456112" alt="Subnautica in-game capture" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" />
+          <span class="absolute inset-0 bg-abyss/0 group-hover:bg-abyss/40 transition-colors flex items-center justify-center opacity-0 group-hover:opacity-100"><span class="font-display text-xs text-glow tracking-wider">View</span></span>
+        </a>
+        <a href="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/ss_623579a6693f6fc48033e619cacc4306f10eef15.1920x1080.jpg?t=1777456112" target="_blank" rel="noopener noreferrer" class="group relative overflow-hidden rounded-lg border border-cyan-400/10 aspect-video">
+          <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/ss_623579a6693f6fc48033e619cacc4306f10eef15.600x338.jpg?t=1777456112" alt="Subnautica in-game capture" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" />
+          <span class="absolute inset-0 bg-abyss/0 group-hover:bg-abyss/40 transition-colors flex items-center justify-center opacity-0 group-hover:opacity-100"><span class="font-display text-xs text-glow tracking-wider">View</span></span>
+        </a>
+        <a href="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/ss_9fdfcc7572ae22b4afa21e6de3b23c962ca5bb55.1920x1080.jpg?t=1777456112" target="_blank" rel="noopener noreferrer" class="group relative overflow-hidden rounded-lg border border-cyan-400/10 aspect-video">
+          <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/ss_9fdfcc7572ae22b4afa21e6de3b23c962ca5bb55.600x338.jpg?t=1777456112" alt="Subnautica in-game capture" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" />
+          <span class="absolute inset-0 bg-abyss/0 group-hover:bg-abyss/40 transition-colors flex items-center justify-center opacity-0 group-hover:opacity-100"><span class="font-display text-xs text-glow tracking-wider">View</span></span>
+        </a>
+      </div>
+      <p class="text-gray-500 text-xs mt-4">All screenshots &copy; Unknown Worlds Entertainment &middot; Subnautica</p>
+    </section>
+
+
+    <!-- MANIFESTO BAND -->
+    <section data-reveal class="max-w-[1100px] mx-auto px-5 py-8">
+      <h2 class="text-2xl font-bold text-white mb-10 text-center">Game Design Lessons from Subnautica</h2>
+      <div class="grid sm:grid-cols-3 gap-4 text-center">
+        <div class="glass-card p-8">
+          <p class="font-display font-bold text-4xl text-glow">0</p>
+          <p class="font-display text-xs tracking-[0.25em] uppercase text-mist mt-3">Combat Systems — no guns, no violence</p>
+        </div>
+        <div class="glass-card p-8">
+          <p class="font-display font-bold text-4xl text-glow">1</p>
+          <p class="font-display text-xs tracking-[0.25em] uppercase text-mist mt-3">Ocean — the entire antagonist is nature itself</p>
+        </div>
+        <div class="glass-card p-8">
+          <p class="font-display font-bold text-4xl text-coral">0</p>
+          <p class="font-display text-xs tracking-[0.25em] uppercase text-mist mt-3">AAA Budget — built by a small indie team in Unity</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="border-t border-cyan-400/10 mt-16">
+    <div class="max-w-[1100px] mx-auto px-5 py-10 grid sm:grid-cols-2 gap-8">
+      <div>
+        <p class="font-display font-semibold text-sm text-glow tracking-[0.2em] uppercase">Dev<span class="text-glowlite">Forge</span></p>
+        <p class="text-xs text-gray-500 mt-3 max-w-sm leading-relaxed">
+          A game development community inspired by Subnautica — celebrating the tools, techniques, and creators that prove indie teams can build worlds worth diving into.
+          Game footage, trailers, and screenshots &copy; Unknown Worlds Entertainment. Not affiliated with Krafton.
+        </p>
+      </div>
+      <div class="text-xs">
+        <p class="font-display text-[10px] tracking-[0.25em] uppercase text-mist mb-3">Chart the Dive</p>
+        <div class="grid grid-cols-2 gap-2 text-gray-500">
+          <a href="index.html" class="hover:text-glow transition-colors">Home &middot; The Descent</a>
+          <a href="about.html" class="hover:text-glow transition-colors">How It Was Made</a>
+          <a href="about.html#indie-vs-aaa" class="hover:text-glow transition-colors">Indie vs AAA</a>
+          <a href="creators.html" class="hover:text-glow transition-colors">Creator Showcase</a>
+          <a href="community.html" class="hover:text-glow transition-colors">Mods &amp; Community</a>
+          <a href="#hero" class="hover:text-glow transition-colors">Back to the Surface</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
